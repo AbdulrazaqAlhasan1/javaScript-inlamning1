@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Signup Form For Registration</h3>
+        <div id="successfull" class="bg-success pl-2 text-white"></div> <br>
+        <form class="p-3 mb-2 bg-primary text-white" action="#">
+            <label for="name">First name:</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your Name" required>
+            <span id="span-name"></span> <br>
+            <label for="email">User Email:</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            <span id="span-email"></span> <br>
+            <label for="password">User Pass:</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter your Pass" required>
+            <span id="span-password"></span> <br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" class="form-control text-black" placeholder="Confirm your Password" required>
+            <span id="span-confirmPassword"></span> <br>
+            <label for="postalCity">country: </label>
+            <select id="country" class="custom-select d-block w-100" required>
+                <option value="">Select a Country</option>
+                <option value="1">Sewden</option>
+                <option value="2">Syria</option>
+                <option value="3">Others</option>
+            </select>
+            <span id="span-country"></span> <br>
+            <label for="gender">Sex :</label>
+            <input type="radio" id="radioOne" name="gender" value="1"> <span>male</span>
+            <input type="radio" id="radioTow" name="gender" value="2"> <span>female</span><br>
+            <span id="span-gender"></span> <br>
+            <label for="textarea" class="label">About :</label>
+            <textarea name="text" id="textarea" class="form-control"></textarea>
+            <span id="span-textarea"></span> <br>
+            <div class="custom-control custom-checkbox">
+                <div>
+                    <input id="checkbox" name="checkbox" type="checkbox" required>
+                    <label for="checkbox">jag accepterar <a href="#" style="color: #34495e;">vilkorna</a> </label>
+                </div>
+                <span id="span-ckeckbox"></span>
+            </div> <br>
+        </form>
+        <button class="btn btn-success form-control" type="submit" id="btn" value="submit">Submit</button>
+        <div class="bg-success text-white pl-2 mt-2" id="Success"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
